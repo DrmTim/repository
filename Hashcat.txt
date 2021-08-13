@@ -1,0 +1,12 @@
+rar2john files\test_doc.rar
+
+john --fork=4 -1=?l?u?d --mask='?1' --min-length=1 --max-length=8 files\Desktop.hash
+john --fork=4 -1=?l?u?d?s --mask='?1' --min-length=4 --max-length=4 files\Desktop.hash
+
+
+john --format=rar-opencl -1=?l?u?d?s --mask='?1' --min-length=1 --max-length=3 files\Desktop.hash //Nothing
+john --format=rar-opencl -1=?l?u?d?s --mask='?1' --min-length=4 --max-length=4 files\Desktop.hash //Nothing
+john --format=rar-opencl -1=?l --mask='?1' --min-length=5 --max-length=5 files\Desktop.hash
+
+
+Hashcat.exe -m 13000 -a3 files\Desktop.hash ?a?a?a?a?a?a?a?a
