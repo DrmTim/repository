@@ -1,0 +1,26 @@
+Strings
+/n/t/r
+""" """
+''' '''
+random_string[0]
+random_string[0:10:2]
+print(random_string * 3)
+
+string_table = "{:15.4f}{:15.4f}{:15.4f}{:15.4f}\n{:15.4f}{:15.4f}{:15.4f}{:15.4f}".format(10.56984, 98.8654399, 12.78, 25.1, 65.7721456, 19.874579, 77.1, 54.87893213333)
+print(string_table)
+
+float_1 = 1.56984
+float_2 = 298.8654399
+float_3 = 12.78
+float_4 = 25.1
+float_5 = 65.7721456
+float_6 = 19.874579
+float_7 = 7877.1
+float_8 = 154.87893213333
+
+string2_table = f"{float_1:15.4f}{float_2:15.4f}{float_3:15.4f}{float_4:15.4f}\n" \
+                f"{float_5:15.4f}{float_6:15.4f}{float_7:15.4f}{float_8:15.4f}"
+print(string2_table)
+
+x = y = z = 12
+x, y, z = 12, 13, 14
